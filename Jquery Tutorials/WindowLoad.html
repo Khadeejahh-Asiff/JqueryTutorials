@@ -1,0 +1,16 @@
+<!-- WIndow Load button takes time to load css and images. it fires after the ready event is fired in the document. -->
+<html>
+  <head>
+    <title>Window Load Function</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      $(window).on("load", function () {
+        alert("Window is fully loaded, including images and frames!");
+      });
+      $(document).ready(function () {
+        alert("My JavaScript Tutorial");
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

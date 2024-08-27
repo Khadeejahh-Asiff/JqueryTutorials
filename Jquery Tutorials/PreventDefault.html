@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // Use the correct selector to select an element by ID
+        $("#TalentBeep").on("click", function (e) {
+          e.preventDefault();
+          $("#divResult").append("Hyperlink default action prevented<br/>");
+        });
+      });
+    </script>
+  </head>
+  <body style="font-family: Arial">
+    <a id="TalentBeep" href="https://talentbeep.com/">
+      Clicking on the link will not take you to Talent Beep
+    </a>
+    <br /><br />
+    <div id="divResult"></div>
+  </body>
+</html>

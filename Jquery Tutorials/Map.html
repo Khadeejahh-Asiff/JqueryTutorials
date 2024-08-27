@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title> </title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      //   $(document).ready(function () {
+      //     var result = [];
+
+      //     $("li").each(function (index, element) {
+      //       result.push($(element).text());
+      //     });
+
+      //     alert(result);
+      //   });
+
+      //   $(document).ready(function () {
+      //     alert(
+      //       $("li")
+      //         .map(function (index, element) {
+      //           return $(element).text();
+      //         })
+      //         .get()
+      //     );
+      //   });
+
+      //           $('li').each(function (index, element) {
+      //         result += $(element).text() + "|";
+      //     });
+      //     result = result.substr(0, result.length - 1);
+
+      //     alert(result);
+      // });
+
+      // Using map() method
+      $(document).ready(function () {
+        alert(
+          $("li")
+            .map(function (index, element) {
+              return $(element).text();
+            })
+            .get()
+            .join("|")
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li>US</li>
+      <li>India</li>
+      <li>UK</li>
+      <li>Canada</li>
+      <li>Australia</li>
+    </ul>
+  </body>
+</html>

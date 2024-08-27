@@ -1,0 +1,28 @@
+<!-- <script type="text/javascript">
+  $(document).ready(function () {
+    $("div[title]")
+      .filter(function () {
+        return;
+        /Div/i.test($(this).attr("title"));
+      })
+      .css("border", "3px solid red");
+  });
+</script> -->
+<html>
+  <head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('div[title*="Div"]').css("border", "3px solid red");
+      });
+    </script>
+  </head>
+  <body>
+    <div title="DivTitle1">DIV 1</div>
+    <br />
+    <div title="DIVTITLE2">DIV 2</div>
+    <br />
+    <div title="divtitle3">DIV 3</div>
+  </body>
+</html>

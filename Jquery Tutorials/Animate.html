@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript">
+      //   $(document).ready(function () {
+      //     $("#myButton").click(function () {
+      //       $("#myDiv").animate({ "font-size": "50px" }, 2000);
+      //     });
+      //   });
+      $(document).ready(function () {
+        $("#myImage").click(function () {
+          $(this)
+            .animate({ left: "300" })
+            .animate({ top: "200" })
+            .animate({ left: "10" })
+            .animate({ top: "10" });
+        });
+      });
+    </script>
+  </head>
+  <body style="font-family: Arial">
+    <!-- <input type="button" id="myButton" value="Animate" /> -->
+    <br /><br />
+    <!-- <div id="myDiv">jQuery animate function</div> -->
+    <img
+      id="myImage"
+      height="100"
+      width="100"
+      style="position: absolute"
+      src="/help.png"
+    />
+  </body>
+</html>

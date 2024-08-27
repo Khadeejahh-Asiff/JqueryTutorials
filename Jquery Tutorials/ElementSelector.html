@@ -1,0 +1,53 @@
+<!-- Ready function make sure that by the time script is used, the Dom is fully loaded. -->
+<!-- In this code snippet, we are using get element bu ID button. -->
+<html>
+  <head>
+    <title>Ready Function</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        alert($("td").length);
+      });
+      $(document).ready(function () {
+        $("tr").css("background-color", "blue");
+      });
+      $(document).ready(function () {
+        $("table tr").each(function () {
+          alert($(this).html);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <table border="1">
+        <tr>
+          <td>C#</td>
+          <td>ASP.NET</td>
+          <td>SQL Server</td>
+        </tr>
+        <tr>
+          <td>ADO.NET</td>
+          <td>JQuery</td>
+          <td>JavaScript</td>
+        </tr>
+        <tr>
+          <td>AJAX</td>
+          <td>CSS</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td>Oracle</td>
+          <td>Java</td>
+          <td>J2EEE</td>
+        </tr>
+        <tr>
+          <td>VB</td>
+          <td>DOTNET</td>
+          <td>Visual C++</td>
+        </tr>
+      </table>
+      <br /><br />
+    </div>
+  </body>
+</html>

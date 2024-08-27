@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      // $(document).ready(function () {
+      //   var divs = $("div");
+
+      //   divs.each(function (i) {
+      //     $(this).attr("title", "DIV " + (i + 1) + " Title");
+      //   });
+
+      //   divs.each(function () {
+      //     alert($(this).attr("title"));
+      //   });
+      // });
+
+      $(document).ready(function () {
+        var config = {
+          title: "New Div Title",
+          Style: "border:3px solid red",
+          name: "My Div",
+        };
+
+        $("div").attr(config);
+
+        var result = "";
+
+        $("div").each(function () {
+          result += "Title = " + $(this).attr("title") + "<br/>";
+          result += "Style = " + $(this).attr("Style") + "<br/>";
+          result += "Name = " + $(this).attr("name") + "<br/><br/>";
+        });
+
+        $("#resultSpan").html(result);
+      });
+    </script>
+  </head>
+  <body style="font-family: Arial">
+    <div id="div1" title="My DIV1">DIV 1</div>
+    <div id="div2" title="My DIV2">DIV 2</div>
+  </body>
+  <span id="resultSpan"></span>
+</html>

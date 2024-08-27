@@ -1,0 +1,30 @@
+<!-- Ready function make sure that by the time script is used, the Dom is fully loaded. -->
+<!-- In this code snippet, we are using get element by ID and class selector button. -->
+<html>
+  <head>
+    <title>Ready Function</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#button").click(function () {
+          alert("My JavaScript Tutorial");
+        });
+      });
+      $(document).ready(function () {
+        $(".class1").click(function () {
+          alert("My Class");
+        });
+      });
+      $(document).ready(function () {
+        $("#button").css("background-color", "red");
+      });
+    </script>
+
+    <input type="button" value="Click Me" id="button" />
+    <div class="class1">
+      <p>hi</p>
+    </div>
+  </body>
+</html>
